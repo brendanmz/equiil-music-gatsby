@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/icons/logo.svg';
+import textLogo from '../assets/icons/text-logo.svg';
 import styled from 'styled-components/macro';
 import Socials from './Socials';
 import theme from '../styles/theme';
@@ -63,7 +63,7 @@ const HeaderVideo = () => (
 const Header = () => (
   <HeaderWrapper>
     <TitleWrapper>
-      <HeaderLogo src={logo} />
+      <HeaderLogo src={textLogo} />
       <Socials className='headerSocials' />
       <MailingListSignup className='headerSignUpForm' />
     </TitleWrapper>
