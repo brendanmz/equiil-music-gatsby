@@ -1,32 +1,33 @@
 module.exports = {
   siteMetadata: {
-    title: "Equiil Music Gatsby",
+    title: 'Equiil Music',
   },
   plugins: [
-    "gatsby-plugin-styled-components",
+    'gatsby-plugin-styled-components',
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: "258470450",
+        trackingId: '258470450',
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: "src/images/icon.png",
+        icon: 'src/assets/icons/logo.svg',
       },
     },
-    "gatsby-transformer-sharp",
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'images',
+        path: './src/assets/images/',
       },
-      __key: "images",
+      __key: 'images',
     },
+    'gatsby-plugin-eslint',
   ],
 };
