@@ -22,16 +22,14 @@ const PageWrapper = styled.div`
   width: 100%;
 `;
 
-const IndexPage = () => {
-  return (
-    <Wrapper className='App'>
-      <PageWrapper>
-        <Header />
-        <Music />
-      </PageWrapper>
-      <Footer />
-    </Wrapper>
-  );
-};
+const IndexPage = () => (
+  <Wrapper className='App'>
+    <PageWrapper>
+      <Header />
+      <Music />
+    </PageWrapper>
+    <Footer />
+  </Wrapper>
+);
 
 export default IndexPage;

@@ -1,9 +1,9 @@
 import React from 'react';
-import textLogo from '../assets/icons/text-logo.svg';
 import styled from 'styled-components/macro';
+import textLogo from '../assets/icons/text-logo.svg';
 import Socials from './Socials';
 import theme from '../styles/theme';
-import { MailingListSignup } from './MailingListSignup';
+import MailingListSignup from './MailingListSignup';
 import heroVideo from '../assets/videos/HeroVideo.mp4';
 
 const HeaderWrapper = styled.header`
@@ -56,7 +56,7 @@ const Video = styled.video`
 
 const HeaderVideo = () => (
   <>
-    <Video autoPlay={true} loop={true} src={heroVideo} loading='lazy'></Video>
+    <Video autoPlay loop src={heroVideo} loading='lazy' />
   </>
 );
 

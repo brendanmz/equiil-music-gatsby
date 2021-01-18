@@ -53,6 +53,7 @@ const songs = [
 const BandcampFrame = ({ trackId, href, songTitle }) => (
   <PlayerWrapper>
     <iframe
+      title={songTitle}
       style={{ border: 0, width: '250px', height: '250px' }}
       src={`https://bandcamp.com/EmbeddedPlayer/track=${trackId}/size=large/bgcol=333333/linkcol=e99708/minimal=true/transparent=true/`}
       seamless
@@ -68,22 +69,20 @@ BandcampFrame.propTypes = {
   songTitle: PropTypes.string.isRequired,
 };
 
-const Music = () => {
-  return (
-    <MusicWrapper>
-      <Heading>Music</Heading>
-      <PlayersWrapper>
-        {songs.map(song => (
-          <BandcampFrame
-            key={song.bandcampHref}
-            trackId={song.trackId}
-            href={song.bandcampHref}
-            songTitle={song.songTitle}
-          />
-        ))}
-      </PlayersWrapper>
-    </MusicWrapper>
-  );
-};
+const Music = () => (
+  <MusicWrapper>
+    <Heading>Music</Heading>
+    <PlayersWrapper>
+      {songs.map(song => (
+        <BandcampFrame
+          key={song.bandcampHref}
+          trackId={song.trackId}
+          href={song.bandcampHref}
+          songTitle={song.songTitle}
+        />
+      ))}
+    </PlayersWrapper>
+  </MusicWrapper>
+);
 
 export default Music;

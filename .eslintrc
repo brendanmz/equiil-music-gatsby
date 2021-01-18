@@ -3,7 +3,7 @@
   "rules": {
     "strict": 0
   },
-  "extends": "airbnb",
+  "extends": ["airbnb", "prettier"],
   "settings": {
     "version": "detect"
   }

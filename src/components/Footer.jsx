@@ -1,6 +1,6 @@
 import React from 'react';
-import { MailingListSignup } from './MailingListSignup';
 import styled from 'styled-components/macro';
+import MailingListSignup from './MailingListSignup';
 import theme from '../styles/theme';
 import Socials from './Socials';
 
@@ -18,13 +18,11 @@ const FooterWrapper = styled.div`
   background-color: ${theme.colors.background};
 `;
 
-const Footer = () => {
-  return (
-    <FooterWrapper>
-      <MailingListSignup />
-      <Socials />
-    </FooterWrapper>
-  );
-};
+const Footer = () => (
+  <FooterWrapper>
+    <MailingListSignup />
+    <Socials />
+  </FooterWrapper>
+);
 
 export default Footer;

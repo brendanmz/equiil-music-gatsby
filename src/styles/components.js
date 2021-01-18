@@ -1,7 +1,7 @@
 import styled from 'styled-components/macro';
 import theme from './theme';
 
-export const MailingListWrapper = styled.div`
+const MailingListWrapper = styled.div`
   z-index: 10;
   width: 85vw;
   max-width: 30rem;
@@ -120,3 +120,5 @@ export const MailingListWrapper = styled.div`
     text-align: right;
   }
 `;
+
+export default MailingListWrapper;

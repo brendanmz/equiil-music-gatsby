@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import theme from '../styles/theme';
 import PropTypes from 'prop-types';
+import theme from '../styles/theme';
 
 import bandcampLogo from '../assets/icons/bandcamp.svg';
 import facebookLogo from '../assets/icons/facebook.svg';
@@ -54,7 +54,8 @@ const socialLogos = [
   {
     src: spotifyLogo,
     alt: 'Spotify',
-    href: 'https://open.spotify.com/artist/4eQksbbHeDihu2X8197Hpd?si=87Z0qAGHRMSwD76Zzauf_Q',
+    href:
+      'https://open.spotify.com/artist/4eQksbbHeDihu2X8197Hpd?si=87Z0qAGHRMSwD76Zzauf_Q',
   },
   {
     src: appleLogo,
@@ -67,19 +68,17 @@ const socialLogos = [
     href: 'https://www.instagram.com/equiil/',
   },
 ];
-const Socials = ({ className }) => {
-  return (
-    <SocialsList className={className}>
-      {socialLogos.map((logo, i) => (
-        <li key={i}>
-          <a href={logo.href} target='_blank' rel='noopener noreferrer'>
-            <SocialLogo src={logo.src} />
-          </a>
-        </li>
-      ))}
-    </SocialsList>
-  );
-};
+const Socials = ({ className }) => (
+  <SocialsList className={className}>
+    {socialLogos.map(logo => (
+      <li key={JSON.stringify(logo)}>
+        <a href={logo.href} target='_blank' rel='noopener noreferrer'>
+          <SocialLogo src={logo.src} />
+        </a>
+      </li>
+    ))}
+  </SocialsList>
+);
 
 Socials.propTypes = {
   className: PropTypes.string.isRequired,
