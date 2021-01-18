@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Equiil Music',
+    siteUrl: 'https://equiil-music.com/',
   },
   plugins: [
     'gatsby-plugin-styled-components',
