@@ -1,5 +1,5 @@
-import styled from 'styled-components/macro';
-import theme from './theme';
+import styled from 'styled-components/macro'
+import theme from './theme'
 
 const MailingListWrapper = styled.div`
   z-index: 10;
@@ -119,6 +119,6 @@ const MailingListWrapper = styled.div`
   &.headerSignUpForm #mc_embed_signup_scroll {
     text-align: right;
   }
-`;
+`
 
-export default MailingListWrapper;
+export default MailingListWrapper

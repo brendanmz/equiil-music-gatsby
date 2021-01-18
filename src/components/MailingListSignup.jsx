@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import MailingListWrapper from '../styles/components';
+import MailingListWrapper from '../styles/components'
 
 const MailingListSignup = ({ className }) => (
   <MailingListWrapper className={className}>
@@ -45,10 +45,10 @@ const MailingListSignup = ({ className }) => (
       </form>
     </div>
   </MailingListWrapper>
-);
+)
 
 MailingListSignup.propTypes = {
   className: PropTypes.string.isRequired,
-};
+}
 
-export default MailingListSignup;
+export default MailingListSignup

@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import PropTypes from 'prop-types';
-import theme from '../styles/theme';
+import React from 'react'
+import styled from 'styled-components/macro'
+import PropTypes from 'prop-types'
+import theme from '../styles/theme'
 
 // import theme from '../styles/theme'
 
@@ -13,7 +13,7 @@ const MusicWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
+`
 
 const PlayersWrapper = styled.div`
   display: flex;
@@ -21,11 +21,11 @@ const PlayersWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-`;
+`
 
 const PlayerWrapper = styled.div`
   margin: 1em;
-`;
+`
 
 const Heading = styled.h2`
   text-align: center;
@@ -35,7 +35,7 @@ const Heading = styled.h2`
   background-color: ${theme.colors.background};
   border-radius: ${theme.borderRadius.primary};
   margin-bottom: 0.5em;
-`;
+`
 
 const songs = [
   {
@@ -48,7 +48,7 @@ const songs = [
     bandcampHref: 'https://equiil.bandcamp.com/track/anti-haste',
     songTitle: 'Anti Haste by Equiil',
   },
-];
+]
 
 const BandcampFrame = ({ trackId, href, songTitle }) => (
   <PlayerWrapper>
@@ -61,13 +61,13 @@ const BandcampFrame = ({ trackId, href, songTitle }) => (
       <a href={href}>{songTitle}</a>
     </iframe>
   </PlayerWrapper>
-);
+)
 
 BandcampFrame.propTypes = {
   trackId: PropTypes.number.isRequired,
   href: PropTypes.string.isRequired,
   songTitle: PropTypes.string.isRequired,
-};
+}
 
 const Music = () => (
   <MusicWrapper>
@@ -83,6 +83,6 @@ const Music = () => (
       ))}
     </PlayersWrapper>
   </MusicWrapper>
-);
+)
 
-export default Music;
+export default Music

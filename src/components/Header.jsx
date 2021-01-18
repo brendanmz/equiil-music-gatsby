@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import textLogo from '../assets/icons/text-logo.svg';
-import Socials from './Socials';
-import theme from '../styles/theme';
-import MailingListSignup from './MailingListSignup';
-import heroVideo from '../assets/videos/HeroVideo.mp4';
+import React from 'react'
+import styled from 'styled-components/macro'
+import textLogo from '../assets/icons/text-logo.svg'
+import Socials from './Socials'
+import theme from '../styles/theme'
+import MailingListSignup from './MailingListSignup'
+import heroVideo from '../assets/videos/HeroVideo.mp4'
 
 const HeaderWrapper = styled.header`
   display: flex;
@@ -15,7 +15,7 @@ const HeaderWrapper = styled.header`
   @media (min-width: ${theme.breakpoints.mobile}px) {
     padding-bottom: 43%;
   }
-`;
+`
 
 const HeaderLogo = styled.img`
   width: 80vw;
@@ -26,7 +26,7 @@ const HeaderLogo = styled.img`
   @media (min-width: ${theme.breakpoints.mobile}px) {
     min-width: 20rem;
   }
-`;
+`
 
 const TitleWrapper = styled.div`
   display: flex;
@@ -44,7 +44,7 @@ const TitleWrapper = styled.div`
       max-height: 10rem;
     }
   }
-`;
+`
 
 const Video = styled.video`
   width: 100%;
@@ -52,13 +52,13 @@ const Video = styled.video`
   @media (min-width: ${theme.breakpoints.mobile}px) {
     position: fixed;
   }
-`;
+`
 
 const HeaderVideo = () => (
   <>
     <Video autoPlay loop src={heroVideo} loading='lazy' />
   </>
-);
+)
 
 const Header = () => (
   <HeaderWrapper>
@@ -69,6 +69,6 @@ const Header = () => (
     </TitleWrapper>
     <HeaderVideo />
   </HeaderWrapper>
-);
+)
 
-export default Header;
+export default Header

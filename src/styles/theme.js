@@ -24,6 +24,6 @@ const theme = {
   borderRadius: {
     primary: '0.5rem',
   },
-};
+}
 
-export default theme;
+export default theme

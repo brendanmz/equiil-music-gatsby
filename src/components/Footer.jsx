@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import MailingListSignup from './MailingListSignup';
-import theme from '../styles/theme';
-import Socials from './Socials';
+import React from 'react'
+import styled from 'styled-components/macro'
+import MailingListSignup from './MailingListSignup'
+import theme from '../styles/theme'
+import Socials from './Socials'
 
 const FooterWrapper = styled.div`
   position: absolute;
@@ -16,13 +16,13 @@ const FooterWrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   background-color: ${theme.colors.background};
-`;
+`
 
 const Footer = () => (
   <FooterWrapper>
     <MailingListSignup />
     <Socials />
   </FooterWrapper>
-);
+)
 
-export default Footer;
+export default Footer

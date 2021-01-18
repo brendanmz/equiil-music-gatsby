@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components/macro';
-import PropTypes from 'prop-types';
-import theme from '../styles/theme';
+import React from 'react'
+import styled from 'styled-components/macro'
+import PropTypes from 'prop-types'
+import theme from '../styles/theme'
 
-import bandcampLogo from '../assets/icons/bandcamp.svg';
-import facebookLogo from '../assets/icons/facebook.svg';
-import soundcloudLogo from '../assets/icons/soundcloud.svg';
-import spotifyLogo from '../assets/icons/spotify.svg';
-import instagramLogo from '../assets/icons/instagram.svg';
-import appleLogo from '../assets/icons/apple-music.svg';
+import bandcampLogo from '../assets/icons/bandcamp.svg'
+import facebookLogo from '../assets/icons/facebook.svg'
+import soundcloudLogo from '../assets/icons/soundcloud.svg'
+import spotifyLogo from '../assets/icons/spotify.svg'
+import instagramLogo from '../assets/icons/instagram.svg'
+import appleLogo from '../assets/icons/apple-music.svg'
 
 const SocialLogo = styled.img`
   z-index: 10;
@@ -21,7 +21,7 @@ const SocialLogo = styled.img`
   &:hover {
     opacity: 60%;
   }
-`;
+`
 
 const SocialsList = styled.ul`
   z-index: 10;
@@ -33,7 +33,7 @@ const SocialsList = styled.ul`
       margin: 1rem;
     }
   }
-`;
+`
 
 const socialLogos = [
   {
@@ -67,7 +67,7 @@ const socialLogos = [
     alt: 'Instagram',
     href: 'https://www.instagram.com/equiil/',
   },
-];
+]
 const Socials = ({ className }) => (
   <SocialsList className={className}>
     {socialLogos.map(logo => (
@@ -78,10 +78,10 @@ const Socials = ({ className }) => (
       </li>
     ))}
   </SocialsList>
-);
+)
 
 Socials.propTypes = {
   className: PropTypes.string.isRequired,
-};
+}
 
-export default Socials;
+export default Socials
