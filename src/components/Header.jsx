@@ -54,12 +54,6 @@ const Video = styled.video`
   }
 `
 
-const HeaderVideo = () => (
-  <>
-    <Video autoPlay loop src={heroVideo} loading='lazy' />
-  </>
-)
-
 const Header = () => (
   <HeaderWrapper>
     <TitleWrapper>
@@ -67,7 +61,7 @@ const Header = () => (
       <Socials className='headerSocials' />
       <MailingListSignup className='headerSignUpForm' />
     </TitleWrapper>
-    <HeaderVideo />
+    <Video autoPlay playsInline loop src={heroVideo} loading='lazy' />
   </HeaderWrapper>
 )
 
