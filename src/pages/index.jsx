@@ -1,11 +1,18 @@
 import * as React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+
 import '../styles/reset.css'
 import '@fontsource/comfortaa' // Defaults to weight 400.
 import styled from 'styled-components'
+
+import theme from '../styles/theme'
+
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Music from '../components/Music'
-import theme from '../styles/theme'
+import DefaultHelmet from '../components/DefaultHelmet'
+
 
 const Wrapper = styled.div`
   position: relative;
@@ -22,14 +29,43 @@ const PageWrapper = styled.div`
   width: 100%;
 `
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Wrapper className='App'>
+    <DefaultHelmet
+      title={data.site.siteMetadata.title}
+      description={data.site.siteMetadata.description}
+      siteUrl={data.site.siteMetadata.siteUrl}
+    />
     <PageWrapper>
       <Header />
       <Music />
+      {data.site.siteMetadata.title}
     </PageWrapper>
     <Footer />
   </Wrapper>
 )
+IndexPage.propTypes = {
+  data: PropTypes.shape({
+    site: {
+      siteMetadata: {
+        description: PropTypes.string,
+        siteUrl: PropTypes.string,
+        title: PropTypes.string,
+      },
+    },
+  }).isRequired,
+}
+
+export const query = graphql`
+  query IndexPageQuery {
+    site {
+      siteMetadata {
+        description
+        siteUrl
+        title
+      }
+    }
+  }
+`
 
 export default IndexPage

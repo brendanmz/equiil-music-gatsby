@@ -72,7 +72,7 @@ const Socials = ({ className }) => (
   <SocialsList className={className}>
     {socialLogos.map(logo => (
       <li key={JSON.stringify(logo)}>
-        <a href={logo.href} target='_blank' rel='noopener noreferrer'>
+        <a href={logo.href} alt={logo.alt} target='_blank' rel='noopener noreferrer'>
           <SocialLogo src={logo.src} />
         </a>
       </li>
