@@ -8,10 +8,12 @@ import styled from 'styled-components'
 
 import theme from '../styles/theme'
 
+import socialCardImage from '../assets/images/SocialsCoverImage.png'
+
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Music from '../components/Music'
-import DefaultHelmet from '../components/DefaultHelmet'
+import SEO from '../components/SEO';
 
 
 const Wrapper = styled.div`
@@ -31,10 +33,10 @@ const PageWrapper = styled.div`
 
 const IndexPage = ({ data }) => (
   <Wrapper className='App'>
-    <DefaultHelmet
+    <SEO
       title={data.site.siteMetadata.title}
       description={data.site.siteMetadata.description}
-      siteUrl={data.site.siteMetadata.siteUrl}
+      image={{src: socialCardImage, height: '810px', width: '2048px'}}
     />
     <PageWrapper>
       <Header />
@@ -61,7 +63,6 @@ export const query = graphql`
     site {
       siteMetadata {
         description
-        siteUrl
         title
       }
     }

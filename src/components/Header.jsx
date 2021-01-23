@@ -57,7 +57,7 @@ const Video = styled.video`
 const Header = () => (
   <HeaderWrapper>
     <TitleWrapper>
-      <HeaderLogo src={textLogo} />
+      <HeaderLogo src={textLogo} alt='Equiil logo' />
       <Socials className='headerSocials' />
       <MailingListSignup className='headerSignUpForm' />
     </TitleWrapper>

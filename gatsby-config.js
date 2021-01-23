@@ -2,7 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Equīīl Music',
     siteUrl: 'https://equiil-music.com/',
-    description: 'do you feel equal?'
+    author: 'Equīīl',
+    description: 'do you feel equal?',
+    keywords:
+      'equiil,equīīl,equiil-music,equiil music,equīīl music,toronto,prague,musician,music producer,electronic music,bass music,underground music,indie music',
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -15,6 +18,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
