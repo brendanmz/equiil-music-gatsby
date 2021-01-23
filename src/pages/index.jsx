@@ -13,8 +13,7 @@ import socialCardImage from '../assets/images/SocialsCoverImage.png'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Music from '../components/Music'
-import SEO from '../components/SEO';
-
+import SEO from '../components/SEO'
 
 const Wrapper = styled.div`
   position: relative;
@@ -36,12 +35,11 @@ const IndexPage = ({ data }) => (
     <SEO
       title={data.site.siteMetadata.title}
       description={data.site.siteMetadata.description}
-      image={{src: socialCardImage, height: '810px', width: '2048px'}}
+      image={{ src: socialCardImage, height: '810px', width: '2048px' }}
     />
     <PageWrapper>
       <Header />
       <Music />
-      {data.site.siteMetadata.title}
     </PageWrapper>
     <Footer />
   </Wrapper>
