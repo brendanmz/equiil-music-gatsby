@@ -61,7 +61,7 @@ const Header = () => (
       <Socials className='headerSocials' />
       <MailingListSignup className='headerSignUpForm' />
     </TitleWrapper>
-    <Video autoPlay playsInline loop src={heroVideo} loading='lazy' />
+    <Video autoPlay playsInline muted loop src={heroVideo} loading='lazy' />
   </HeaderWrapper>
 )
 
