@@ -15,7 +15,7 @@ const theme = {
     primary: "'Comfortaa', cursive",
   },
   breakpoints: {
-    mobile: 786,
+    mobile: 910,
     desktop: 1080,
   },
   elementSize: {
