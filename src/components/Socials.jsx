@@ -4,10 +4,10 @@ import PropTypes from 'prop-types'
 import theme from '../styles/theme'
 
 import bandcampLogo from '../assets/icons/bandcamp.svg'
-import facebookLogo from '../assets/icons/facebook.svg'
 import soundcloudLogo from '../assets/icons/soundcloud.svg'
 import spotifyLogo from '../assets/icons/spotify.svg'
 import instagramLogo from '../assets/icons/instagram.svg'
+import twitterLogo from '../assets/icons/twitter.svg'
 import appleLogo from '../assets/icons/apple-music.svg'
 
 const SocialLogo = styled.img`
@@ -41,11 +41,11 @@ const socialLogos = [
     alt: 'Soundcloud',
     href: 'https://soundcloud.com/equiil',
   },
-  {
-    src: facebookLogo,
-    alt: 'Facebook',
-    href: 'https://www.facebook.com/equiil',
-  },
+  // {
+  //   src: facebookLogo,
+  //   alt: 'Facebook',
+  //   href: 'https://www.facebook.com/equiil',
+  // },
   {
     src: bandcampLogo,
     alt: 'Bandcamp',
@@ -66,6 +66,11 @@ const socialLogos = [
     src: instagramLogo,
     alt: 'Instagram',
     href: 'https://www.instagram.com/equiil/',
+  },
+  {
+    src: twitterLogo,
+    alt: 'Twitter',
+    href: 'https://twitter.com/Equiil1',
   },
 ]
 const Socials = ({ className }) => (
