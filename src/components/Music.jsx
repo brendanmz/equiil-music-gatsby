@@ -37,7 +37,13 @@ const Heading = styled.h2`
   margin-bottom: 0.5em;
 `
 
+// Always put most recent first
 const songs = [
+  {
+    trackId: 4093967789,
+    bandcampHref: 'https://equiil.bandcamp.com/track/lunch-tray',
+    songTitle: 'Lunch Tray by Equiil',
+  },
   {
     trackId: 308596430,
     bandcampHref: 'https://equiil.bandcamp.com/track/im-falling-over',
