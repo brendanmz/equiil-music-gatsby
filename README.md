@@ -1,6 +1,6 @@
 # Equiil Music
 
-## A simple site for a bass music producer
+## A simple landing page for a bass music producer
 
 Built with:
 
