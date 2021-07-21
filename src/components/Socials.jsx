@@ -55,7 +55,7 @@ const socialLogos = [
     src: spotifyLogo,
     alt: 'Spotify',
     href:
-      'https://open.spotify.com/artist/4eQksbbHeDihu2X8197Hpd?si=87Z0qAGHRMSwD76Zzauf_Q',
+      'https://open.spotify.com/artist/27Q4gHKd9MH9mvzGg5CSNk?si=_FwaDOcZTrKLZqvTYmJFHg&dl_branch=1',
   },
   {
     src: appleLogo,
